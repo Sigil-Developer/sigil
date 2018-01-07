@@ -24,4 +24,4 @@ Features
 Download
 -----------------
 
-See https://github.com/Sigil-Developer/Sigil/releases for wallet releases
+See https://github.com/Sigil-Developer/Sigil/releases to find wallets for each OS.
