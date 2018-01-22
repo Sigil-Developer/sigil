@@ -92,7 +92,7 @@ CScript COINBASE_FLAGS;
 const string strMessageMagic = "Sigil Signed Message:\n";
 
 // Settings
-int64 nTransactionFee = 0.01;
+int64 nTransactionFee = MIN_TX_FEE;
 int64 nMinimumInputValue = TX_DUST;
 int64 nStakeMinValue = 1 * COIN;
 
