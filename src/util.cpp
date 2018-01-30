@@ -1022,7 +1022,7 @@ boost::filesystem::path GetDefaultDataDir() {
 
 #if (WIN32)
     /* Windows: current directory \ data for livenet */
-    path = boost::filesystem::current_path() / "data";
+    path = GetSpecialFolderPath(CSIDL_APPDATA) / "Sigil";
 #else
     /* Linux, Mac OS X, *BSD and so on: ~/.sigil */
     char* pszHome = getenv("HOME");
@@ -1083,7 +1083,7 @@ boost::filesystem::path GetConfigFile()
     if(mapArgs.count("-conf")) pathConfigFile = fs::path(mapArgs["-conf"]);
     else pathConfigFile = fs::path("sigil.conf");
     if(!pathConfigFile.is_absolute()) {
-        if(!GetBoolArg("-testnet", false)) 
+        if(!GetBoolArg("-testnet", false))
           pathConfigFile = GetDataDir(false) / pathConfigFile;
         else
           pathConfigFile = GetDataDir(false) / "testnet" / pathConfigFile;
