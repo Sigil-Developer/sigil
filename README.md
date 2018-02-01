@@ -12,7 +12,7 @@ Features
 -----------------
 
   - Hybrid PoW/PoS Coin
-  - 50,000,000 total coins
+  - 97,500,000 total coins
   - 1.5 minute PoW block time
   - 3 minute PoS block time
   - Implements Orbitcoin Super Shield
