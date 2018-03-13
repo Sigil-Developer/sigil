@@ -1,4 +1,6 @@
 
+
+
 # Sigil
 www.sigilplatform.com
 
@@ -29,6 +31,7 @@ See https://github.com/Sigil-Developer/Sigil/releases to find Windows, Mac, and 
 
 Build instruktions Linux Daemon
 -----------------
+
 Install dependencies:
 
 - sudo apt-get install build-essential
@@ -41,3 +44,9 @@ Install dependencies:
 cd sigil/src
 
 - sudo make -f makefile.unix 
+
+To build with UPnP support:
+
+- sudo apt-get install libminiupnpc-dev
+
+- sudo make -f makefile.unix USE_UPNP= (USE_UPNP=- No UPnP support - miniupnp not required, USE_UPNP=0 (the default) UPnP support turned off by default at runtime, USE_UPNP=1 UPnP support turned on by default at runtime)
