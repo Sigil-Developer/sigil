@@ -37,7 +37,7 @@ Install dependencies:
 - sudo apt-get install build-essential
 - sudo apt-get install libssl-dev
 - sudo apt-get install libdb-dev
-- sudo apt-get install libd++-dev
+- sudo apt-get install libdb++-dev
 - sudo apt-get install libboost-all-dev
 - sudo apt-get install libqrencode-dev
 
